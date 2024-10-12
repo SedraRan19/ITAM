@@ -127,3 +127,8 @@
   background-color: rgb(119, 203, 248);
   color: #fff;
 }
+
+#btn_sync {
+  color: #fff;
+  background-color: rgb(126, 126, 126);
+}
