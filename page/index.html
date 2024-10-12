@@ -169,12 +169,12 @@
 
 
       <!-- Hoverable Table rows -->
-      <div class="container">
+      <div class="container-fluid">
       <div class="card">
         <nav class="navbar navbar-expand-lg navbar-light mb-1">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <h3 class="mb-0">All Assetes (...)</h3>
                 </li>
@@ -184,82 +184,43 @@
                 <li class="nav-item">
                   <span class="badge bg-label-info me-1">Deployed : 12</span>
                 </li>
-                </ul>
-                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <form class="d-flex" onsubmit="return false">
-                    <input class="form-control me-2 btn-sm" type="search" placeholder="Search" aria-label="Search" />
+                    <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="min-width: 200px;" />
                   </form>
                 </li>
                 <li class="nav-item">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-secondary me-1">
                     <span class="tf-icons bx bx-list-ul"></span>&nbsp; Bulk Edit
                   </button>
                 </li>
                 <li class="nav-item">
-                  <div class="btn-group" role="group">
+                  <div class="btn-group me-1" role="group">
                     <button
-                    id="btnGroupDrop1"
-                    type="button"
-                    class="btn btn-outline-secondary dropdown-toggle btn-sm"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                      id="btnGroupDrop1"
+                      type="button"
+                      class="btn btn-outline-secondary dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
                     >
-                    <span class="tf-icons bx bx-columns"></span>&nbsp;
-                    Columns
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
-                    <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
-                  </div>
+                      <span class="tf-icons bx bx-sort"></span>&nbsp; Sort
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
+                    </div>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <div class="btn-group" role="group">
-                    <button
-                    id="btnGroupDrop1"
-                    type="button"
-                    class="btn btn-outline-secondary dropdown-toggle btn-sm"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >
-                    <span class="tf-icons bx bx-sort"></span>&nbsp;
-                    Sort
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
-                    <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
-                  </div>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <div class="btn-group" role="group">
-                    <button
-                    id="btnGroupDrop1"
-                    type="button"
-                    class="btn btn-outline-secondary dropdown-toggle btn-sm"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >
-                    <span class="tf-icons bx bx-filter"></span>&nbsp;
-                    Filter
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
-                    <a class="dropdown-item" href="javascript:void(0);">Dropdown link</a>
-                  </div>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-secondary btn-sm">
+                  <button type="button" class="btn btn-outline-secondary me-1">
                     <span class="tf-icons bx bx-download"></span>&nbsp; Export
                   </button>
                 </li>
                 <li class="nav-item">
-                  <button type="button" class="btn btn-primary btn-sm">
+                  <button type="button" class="btn btn-primary">
                     <span class="tf-icons bx bx-plus"></span>&nbsp; New
                   </button>
                 </li>
@@ -267,6 +228,7 @@
             </div>
           </div>
         </nav>
+        
           
         <div class="table-responsive text-nowrap mt-3">
           <table class="table table-hover">
