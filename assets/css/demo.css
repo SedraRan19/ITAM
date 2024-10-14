@@ -113,6 +113,12 @@
   width: 100%;
 }
 
+#btn_save {
+  width: 100%;
+  color: #fff;
+  background-color: rgb(126, 126, 126);
+}
+
 #buttonGreen {
   background-color: rgb(119, 248, 143);
   color: #fff;
